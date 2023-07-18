@@ -1,0 +1,15 @@
+a=int(input('primeiro valor:'))
+b=int(input('segundo valor:'))
+c=int(input('terceiro valor:'))
+menor=a
+if b<a and b<c:
+    menor=b
+if c<a and c<b:
+    menor=c
+Maior=a
+if b>a and b>c:
+    Maior=b
+if c>a and c>b:
+    Maior=c
+print('o maior numero digitado foi {}'.format(Maior))
+print('menor valor digitado foi {}'.format(menor))
