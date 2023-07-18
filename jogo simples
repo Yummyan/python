@@ -1,0 +1,9 @@
+import random 
+
+print('A maquina vai escolher um numero de 1 a 5 , será que voce descobre qual?')
+a=random.randint(1,5)
+us=int(input('Coloque um numero de 1 a 5 :'))
+if us==a:
+    print('Voce acertou, a maquina e voce colocaram o mesmo numero!!')
+else:
+    print('Que pena a maquina escolheu {}'.format(a))
