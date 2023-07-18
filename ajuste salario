@@ -1,0 +1,7 @@
+salario=float(input('qual salario do funcionario?:'))
+if salario <= 1250:
+    novo=salario + (salario * 15 / 100)
+    print('seu novo salrio é de {:.2f}R$'.format(novo))
+else:
+    novo=salario* (salario *10 / 100)
+    print(' seu novo salario é de {:.2f}R$'.format(novo))
