@@ -1,0 +1,9 @@
+print('ola! vamos descobrir se o numero que voce colocou é impar ou par?')
+
+n=int(input('coloque um numero sem virgula: '))
+r=n%2
+if r==1:
+    print('seu numero é impar')
+
+else:
+    print('seu numero é par')
