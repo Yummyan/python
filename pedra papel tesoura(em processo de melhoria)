@@ -1,0 +1,23 @@
+import random
+
+escolhas = ['pedra', 'papel', 'tesoura']
+
+jogador_opcao = int(input('Escolha: \n1 - pedra\n2 - papel\n3 - tesoura\n'))
+
+jogador = escolhas[jogador_opcao - 1]
+
+computador = random.choice(escolhas)
+
+if jogador == computador:
+    print('Empate !')
+    print(' voce e seu adversario escolheram a mesma coisa,que pena :/')
+elif (
+    (jogador == 'pedra' and computador == 'tesoura') or
+    (jogador == 'papel' and computador == 'pedra') or
+    (jogador == 'tesoura' and computador == 'papel')
+):
+    print('Vitória !')
+    print(' voce escolheu {} e o adversario escolheu {}, parabens pela vitoria !'.format(jogador, computador))
+else:
+    print('Derrota !')
+    print(' voce escolheu {} e o adversario escolheu {}, Mais sorte na proxima :( '.format(jogador, computador))
