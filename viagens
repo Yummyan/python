@@ -1,0 +1,11 @@
+print('viagens com menos de 200 km sera cobrado 0.50 contavos por km, viagens maiores sera cobrado 0.45 centavos!')
+km=int(input('coloque quantos km sera sua viagem para calcularmos o preço: '))
+km1=km*0.50
+km2=km*0.45
+
+
+if km<=200:
+    print:('como sua viagem sera de {} KM o preço sera de {} Reais '.format(km,km1))
+
+else :
+    print('como sua viagem sera de {} KM o preço sera de {} Reais '.format(km,km2))
