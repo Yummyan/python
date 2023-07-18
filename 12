@@ -1,0 +1,14 @@
+print('Você quer comprar uma casa? Muito bom! Vamos ver se você pode comprar uma!')
+preco = float(input('Coloque o valor da casa: '))
+salario = float(input('Coloque o seu salário: '))
+tempo = int(input('Coloque quantos anos você quer pagar a casa: '))
+
+ct = tempo * 12
+prestacao = preco / ct
+
+limite_prestacao = salario * 0.3  # Limite de 30% do salário para a prestação
+
+if prestacao > limite_prestacao:
+    print("Desculpe, você não pode comprar essa casa. A prestação excede 30% do seu salário.")
+else:
+    print("Parabéns! Você pode comprar essa casa.")
