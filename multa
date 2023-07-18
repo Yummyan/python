@@ -1,0 +1,7 @@
+v=int(input('Coloque quantos km/h voce passou na av paulista: '))
+m=(v-80)*7
+if v<80:
+    print('seu carro esta dentro do limite de velocidade, boa viagem!')
+
+else:
+    print(' seu carro passou o limite de velocidade de 80km/h0 e tera que pagar a multa de {} reais , mais cuidado na prixima!'.format(m)) 
