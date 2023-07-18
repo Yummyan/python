@@ -1,0 +1,9 @@
+print('ANALISADOR DE TRIANGULOS!')
+print("-="*15)
+a=float(input('Primeiro seguimento:'))
+b=float(input('Segundo seguimento:'))
+c=float(input('Terceito seguimento:'))
+if a < b + c and b < a + c and c < a + b :
+    print('Os seguimentos a cima podem formar um triangulo!')
+else:
+    print('Os seguimentos a cima não podem formar um triangulo')
