@@ -1,0 +1,36 @@
+from datetime import date
+
+atual= date.today().year
+print(''' voce é homem ou mulher? 
+      [1] homem
+      [2] mulher''')
+opção=int(input('coloque uma opção: '))
+if opção == 1:
+
+    nas=int(input('Coloque o o seu ano de nascimento: '))
+    idade = atual-nas
+    print('Quem nasceu em  {} tem {} anos'.format(nas,idade))
+
+    if idade == 18:
+        print('Voce tera que se alistar imediatamente!')
+           
+           
+
+    elif idade < 18:
+        saldo=18-idade
+        ano= atual + saldo
+        print('Voce não tera que se alistar esse ano! mas tera que alistar em {} anos'.format(saldo))
+        print('seu alistamento sera no ano de {}!'.format(ano))
+        
+ 
+    elif idade > 18: 
+        saldo1 =idade - 18
+        ano= atual - saldo1
+        print('Ja passou a hora de voce se alistar, seu alistamento seria que ter ocorrido a {} anos!'.format(saldo1))
+        print('seu alistamento deveria ter ocorrido no ano de {}'.format(ano))
+
+elif opção == 2:
+    print(' o sexo feminino não tem que participar do alismento militar obrigatorio, tenha um otimo dia! ')
+
+else:
+    print('Opção invalida.')
